@@ -1,0 +1,74 @@
+
+Stage 1: 
+Requirement: 
+We need to print a staircase with height and base equal to the user input value. we need to use # symbol as building block for stair case. 
+
+Condition: 
+the last/bottom line should not have any spaces from the left
+the height and the width of the staircase needs to be same. 
+
+Input: 
+User will give input n positive integer number of steps. 10, 5, 15
+
+Output: 
+Print a staircase of size n using # symbols
+
+testcases: 
+Given 4 as user input the output should print 4 stair cases with bottom line having 4 #'s. 
+
+
+Stage 2:
+Part 1: 
+Take user input 
+Part 2: 
+Print the spaces 
+Part 3:
+Print the # symbols
+Part 4: 
+Set the end condition
+
+Stage 3: 
+
+Part 1: 
+Take user input 
+  take n = input from user 
+Part 2: 
+Print the spaces 
+  for x = 1 to n 
+	for 1 to n-x n-x > 0
+		print space
+Part 3:
+Print the # symbols
+  for x = 1 to n 
+	for n-x to n
+		print #
+Part 4: 
+Set the end condition
+no of rows == n: stop the program. 
+
+Integration code: 
+we can merge both 2 and 3 parts together into one loop
+for x = 1 to n 
+	for y=1 to n-x n-x > y
+		print space
+	for z=n-x to n
+		print #
+Stage 4:  
+
+var n = prompt("Input no of Stairs");
+for(var i=1;i<=n;i++) {
+	for(var j=1;j<=n-i;j++) {
+		document.write(" ");
+	}
+	for(var k=1;k<=i;k++) {
+		document.write("#");
+	}
+	document.write("<br/>");
+}
+
+
+Stage 5: 
+Try to Run above javascript online or using a html page and
+see if it will run directly as written. 
+
+
